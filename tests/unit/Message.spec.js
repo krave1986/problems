@@ -4,11 +4,11 @@ import Message from "../../src/components/Message";
 const createCmp = propsData => mount(Message, { propsData });
 
 describe("Message.spec.js", () => {
-	let cmp;
 	describe("Properties", () => {
 		// TODO
 		it("has a message property", () => {
-			cmp = createCmp({ message: "hey" });
+			const cmp = createCmp({ message: "hey" });
+			console.log(cmp);
 		});
 	});
 });
