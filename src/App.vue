@@ -1,18 +1,16 @@
 <template>
 	<div>
-		<MessageList :messages="messages" />
+		<Counter />
 	</div>
 </template>
 
 <script>
-import MessageList from "./components/MessageList";
+import Counter from "./components/Counter";
 
 export default {
 	name: "App",
-	data: () => ({
-		messages: ["Hey John", "Howdy Paco"]
-	}),
-	components: { MessageList }
+	data: () => ({}),
+	components: { Counter }
 };
 </script>
 
